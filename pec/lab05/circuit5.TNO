@@ -1,0 +1,354 @@
+********************************************************************************
+***                       Micro-Cap 12.2.0.4 (32 bit)                        ***
+***                                                                          ***
+***                                                                          ***
+***                      Transient Analysis of circuit5                      ***
+***                          11/10/2020 11:31:23 AM                          ***
+********************************************************************************
+Limits
+======
+Maximum Run Time           1000n
+Output Start Time (tstart) 0
+Maximum Time Step          0.00000001
+Number of Points           51
+Temperature                Linear 27
+Retrace Runs               1
+Run Options                Normal
+State Variables            Zero
+Operating Point            On
+Operating Point Only       Off
+Auto Scale Ranges          Off
+Accumulate Plots           Off
+Fixed Time Step            Off
+Periodic Steady State      Off
+Ignore Expression Errors   Off
+
+
+*****************************************************
+***                Temperature=27                 ***
+*****************************************************
+
+Temperature=27
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+SEL           0.000   IN            0.000   OUT         500.881u 
+PMOSV         3.402   5             5.000   $G_DGND       0.000  
+$G_DPWR       5.000   X1$.1       776.087m  X1$.2        84.268m 
+X1$.3        42.134m 
+
+DC Operating Point Digital States
+=================================
+Node     State Node     State
+1$ATOD   0     4$DTOA   1    
+
+
+Operating Point for Devices of Type Diode
+=========================================
+Instance:             X1$.D1          X1$.D2          X1$.D3
+Using model:         D74CLMP             D74             D74
+
+Capacitance Terms:
+CAP                   5.000p          5.109p          5.109p
+
+Current Terms:
+ID                    0.000          83.124f         83.124f
+
+Resistance Terms:
+REQ                 721.170G        336.535G        336.535G
+
+Voltage Terms:
+VD                    0.000          42.134m         42.134m
+
+Power DC Terms:
+PD                    0.000           3.502f          3.502f
+PS                    0.000           0.000           0.000 
+
+DC Pin Currents:
+Id                    0.000          83.124f         83.124f
+
+Condition:
+State                    OFF             OFF             OFF
+
+Device Variables:
+area                  1.000           1.000           1.000 
+ic                    0.000           0.000           0.000 
+
+
+
+Operating Point for Devices of Type Bipolar Junction Transistors NPN
+====================================================================
+Instance:             X1$.Q1
+Using model:             Q74
+
+Beta Terms:
+BETADC              -78.713p
+BETAAC               47.046 
+
+Capacitance Terms:
+CPI                  10.242p
+CMU                  16.771p
+CBX                   0.000 
+CJS                   2.890p
+
+Conductance Terms:
+GM                   39.977m
+
+Current Terms:
+IB                    1.056m
+IC                  -83.119f
+
+Resistance Terms:
+RPI                   1.177K
+RX                    0.000 
+RO                  625.353 
+
+Voltage Terms:
+VBE                 776.087m
+VBC                 691.819m
+VCE                  84.268m
+
+Frequency Terms:
+FT                235.541MEG
+
+Power DC Terms:
+PD                  819.531u
+PS                    0.000 
+
+DC Pin Currents:
+Ib                    1.056m
+Ic                  -83.119f
+Ie                   -1.056m
+Is                    0.000 
+
+Condition:
+State                    SAT
+
+Device Variables:
+area                  1.000 
+vbe                   0.000 
+vce                   0.000 
+
+
+
+Operating Point for Devices of Type BSIM3 NMOS
+==============================================
+Instance:                 M2
+Using model:          NMODEL
+
+Capacitance Terms:
+CBD                   0.000 
+CBS                   0.000 
+CGSOVL                0.000 
+CGDOVL                0.000 
+CGBOVL                0.000 
+CGS                   0.000 
+CGD                   0.000 
+CGB                   0.000 
+
+Conductance Terms:
+GM                2.111E-028
+GDS               1.774E-026
+GMBS              2.052E-028
+gbd                   1.379p
+gbs                   1.387p
+
+Current Terms:
+ID                    0.693f
+
+Charge Terms:
+qb                   -0.618f
+qd               -3.929E-032
+qg                    0.618f
+
+Voltage Terms:
+VGS                   0.000 
+VDS                 500.881u
+VBS                   0.000 
+VGB                   0.000 
+VGD                -500.881u
+VDB                 500.881u
+VTH                   2.132 
+VDSAT                33.146m
+
+Internal Voltage Terms:
+vbs                   0.000 
+vds                 500.881u
+vgs                   0.000 
+
+Power DC Terms:
+PD                3.469E-019
+PS                    0.000 
+
+DC Pin Currents:
+Ig                    0.000 
+Id                    0.693f
+Is               -8.973E-030
+Ib                   -0.693f
+
+Condition:
+State                       
+
+Device Variables:
+m                     1.000 
+l                     0.000 
+w                     0.000 
+ad                    0.000 
+as                    0.000 
+pd                    0.000 
+ps                    0.000 
+nrd                   0.000 
+nrs                   0.000 
+nrb                   0.000 
+nrg                   0.000 
+vds                   0.000 
+vgs                   0.000 
+vbs                   0.000 
+nqsmod                0.000 
+acnqsmod              0.000 
+
+
+
+Operating Point for Devices of Type BSIM3 PMOS
+==============================================
+Instance:                 M1
+Using model:          PMODEL
+
+Capacitance Terms:
+CBD                   0.000 
+CBS                   0.000 
+CGSOVL                0.000 
+CGDOVL                0.000 
+CGBOVL                0.000 
+CGS                   0.000 
+CGD                   0.000 
+CGB                   0.000 
+
+Conductance Terms:
+GM                5.670E-056
+GDS               3.980E-054
+GMBS              5.031E-057
+gbd                   1.000p
+gbs                   1.000p
+
+Current Terms:
+ID                   -5.010p
+
+Charge Terms:
+qb                   -2.200f
+qd                4.938E-032
+qg                    2.200f
+
+Voltage Terms:
+VGS                   3.401 
+VDS                -500.881u
+VBS                   4.999 
+VGB                  -1.598 
+VGD                   3.402 
+VDB                  -5.000 
+VTH                   3.103 
+VDSAT                54.798m
+
+Internal Voltage Terms:
+vbs                  -4.999 
+vds                 500.881u
+vgs                  -3.401 
+
+Power DC Terms:
+PD                   50.095p
+PS                    0.000 
+
+DC Pin Currents:
+Ig                    0.000 
+Id                   -5.010p
+Is                   -5.009p
+Ib                   10.019p
+
+Condition:
+State                       
+
+Device Variables:
+m                     1.000 
+l                     0.000 
+w                     0.000 
+ad                    0.000 
+as                    0.000 
+pd                    0.000 
+ps                    0.000 
+nrd                   0.000 
+nrs                   0.000 
+nrb                   0.000 
+nrg                   0.000 
+vds                   0.000 
+vgs                   0.000 
+vbs                   0.000 
+nqsmod                0.000 
+acnqsmod              0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                  R1          X1$.R1          X2$.R1          X2$.R2
+V                    500.881u          4.224           5.000           0.000 
+Power DC Terms:
+PD                     2.509f          4.460m         25.000n          0.000 
+
+DC Pin Currents:
+Ir                     5.009p          1.056m          5.000n          0.000 
+
+Device Variables:
+tc1                    0.000           0.000           0.000           0.000 
+tc2                    0.000           0.000           0.000           0.000 
+
+
+Instance:              X2$.R3    X3$.N1.rhigh     X3$.N1.rlow
+V                      0.000           1.598          -3.402 
+Power DC Terms:
+PD                     0.000          13.101m         27.882m
+
+DC Pin Currents:
+Ir                     0.000           8.197m         -8.197m
+
+Device Variables:
+tc1                    0.000           0.000           0.000 
+tc2                    0.000           0.000           0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                  C1          X1$.C1       X3$.CLOAD
+V                    500.881u          0.000           3.402 
+Power DC Terms:
+PS                     0.000           0.000           0.000 
+
+DC Pin Currents:
+Ic                     0.000           0.000           0.000 
+
+Device Variables:
+ic                     0.000           0.000           0.000 
+
+
+
+Operating Point for Devices of Type SPICE Source
+================================================
+Instance:               VSEL             CLK              V1          X2$.V1
+V                     0.000           0.000           5.000           5.000 
+Power DC Terms:
+PG                    0.000           0.000          50.097p         46.264m
+
+DC Pin Currents:
+ISource               1.056m          5.010p        -10.019p         -9.253m
+
+
+Instance:             X2$.V2
+V                     0.000 
+Power DC Terms:
+PG                    0.000 
+
+DC Pin Currents:
+ISource               8.197m
+
+
