@@ -3,7 +3,7 @@
 ***                                                                          ***
 ***                                                                          ***
 ***                      Transient Analysis of circuit6                      ***
-***                          11/10/2020 1:14:12 PM                           ***
+***                          11/21/2020 5:01:47 PM                           ***
 ********************************************************************************
 Limits
 ======
@@ -33,20 +33,20 @@ Temperature=27
 DC Operating Point Voltages
 ===========================
 Node         Voltage  Node         Voltage  Node         Voltage 
-IN            5.000   OUT         100.336n  3             3.402  
-4             5.000   SEL1          0.000   6             3.402  
-7             5.000   $G_DGND       0.000   $G_DPWR       5.000  
-X3$.1       776.087m  X3$.2        84.268m  X3$.3        42.134m 
+SEL           0.000   IN            0.000   OUT           5.010u 
+4             3.402   5             5.000   $G_DGND       0.000  
+$G_DPWR       5.000   X1$.1       776.087m  X1$.2        84.268m 
+X1$.3        42.134m 
 
 DC Operating Point Digital States
 =================================
-Node     State Node     State Node     State
-3$DTOA   1     5$ATOD   0     6$DTOA   1    
+Node     State Node     State
+1$ATOD   0     4$DTOA   1    
 
 
 Operating Point for Devices of Type Diode
 =========================================
-Instance:             X3$.D1          X3$.D2          X3$.D3
+Instance:             X1$.D1          X1$.D2          X1$.D3
 Using model:         D74CLMP             D74             D74
 
 Capacitance Terms:
@@ -79,7 +79,7 @@ ic                    0.000           0.000           0.000
 
 Operating Point for Devices of Type Bipolar Junction Transistors NPN
 ====================================================================
-Instance:             X3$.Q1
+Instance:             X1$.Q1
 Using model:             Q74
 
 Beta Terms:
@@ -134,234 +134,221 @@ vce                   0.000
 
 Operating Point for Devices of Type BSIM3 NMOS
 ==============================================
-Instance:                 M2              M4
-Using model:          NMODEL          NMODEL
+Instance:                 M2
+Using model:          NMODEL
 
 Capacitance Terms:
-CBD                   0.000           0.000 
-CBS                   0.000           0.000 
-CGSOVL                0.000           0.000 
-CGDOVL                0.000           0.000 
-CGBOVL                0.000           0.000 
-CGS                   0.000           0.000 
-CGD                   0.000           0.000 
-CGB                   0.000           0.000 
+CBD                   0.000 
+CBS                   0.000 
+CGSOVL                0.000 
+CGDOVL                0.000 
+CGBOVL                0.000 
+CGS                   0.000 
+CGD                   0.000 
+CGB                   0.000 
 
 Conductance Terms:
-GM                5.891E-023      4.262E-032
-GDS               4.525E-024      1.803E-026
-GMBS              3.927E-023      4.144E-032
-gbd                   1.387p          1.387p
-gbs                   1.000p          1.387p
+GM                2.128E-030
+GDS               1.803E-026
+GMBS              2.069E-030
+gbd                   1.387p
+gbs                   1.387p
 
 Current Terms:
-ID                1.391E-019      1.391E-019
+ID                    0.007f
 
 Charge Terms:
-qb                   -0.618f         -0.618f
-qd               -5.084E-032     -3.881E-032
-qg                    0.618f          0.618f
+qb                   -0.618f
+qd               -3.881E-032
+qg                    0.618f
 
 Voltage Terms:
-VGS                  -5.000           0.000 
-VDS                  -5.000         100.336n
-VBS                  -5.000           0.000 
-VGB                   0.000           0.000 
-VGD                -100.336n       -100.336n
-VDB                 100.336n        100.336n
-VTH                   1.851           2.132 
-VDSAT                33.064m         33.146m
+VGS                   0.000 
+VDS                   5.010u
+VBS                   0.000 
+VGB                   0.000 
+VGD                  -5.010u
+VDB                   5.010u
+VTH                   2.132 
+VDSAT                33.146m
 
 Internal Voltage Terms:
-vbs                  -5.000           0.000 
-vds                  -5.000         100.336n
-vgs                  -5.000           0.000 
+vbs                   0.000 
+vds                   5.010u
+vgs                   0.000 
 
 Power DC Terms:
-PD                   25.050p      1.396E-026
-PS                    0.000           0.000 
+PD                3.480E-023
+PS                    0.000 
 
 DC Pin Currents:
-Ig                    0.000           0.000 
-Id                1.391E-019      1.391E-019
-Is                    5.010p     -1.806E-033
-Ib                   -5.010p     -1.391E-019
+Ig                    0.000 
+Id                    0.007f
+Is               -9.090E-032
+Ib                   -0.007f
 
 Condition:
-State                                       
+State                       
 
 Device Variables:
-m                     1.000           1.000 
-l                     0.000           0.000 
-w                     0.000           0.000 
-ad                    0.000           0.000 
-as                    0.000           0.000 
-pd                    0.000           0.000 
-ps                    0.000           0.000 
-nrd                   0.000           0.000 
-nrs                   0.000           0.000 
-nrb                   0.000           0.000 
-nrg                   0.000           0.000 
-vds                   0.000           0.000 
-vgs                   0.000           0.000 
-vbs                   0.000           0.000 
-nqsmod                0.000           0.000 
-acnqsmod              0.000           0.000 
+m                     1.000 
+l                     0.000 
+w                     0.000 
+ad                    0.000 
+as                    0.000 
+pd                    0.000 
+ps                    0.000 
+nrd                   0.000 
+nrs                   0.000 
+nrb                   0.000 
+nrg                   0.000 
+vds                   0.000 
+vgs                   0.000 
+vbs                   0.000 
+nqsmod                0.000 
+acnqsmod              0.000 
 
 
 
 Operating Point for Devices of Type BSIM3 PMOS
 ==============================================
-Instance:                 M1              M3
-Using model:          PMODEL          PMODEL
+Instance:                 M1
+Using model:          PMODEL
 
 Capacitance Terms:
-CBD                   0.000           0.000 
-CBS                   0.000           0.000 
-CGSOVL                0.000           0.000 
-CGDOVL                0.000           0.000 
-CGBOVL                0.000           0.000 
-CGS                   0.000           0.000 
-CGD                   0.000           0.000 
-CGB                   0.000           0.000 
+CBD                   0.000 
+CBS                   0.000 
+CGSOVL                0.000 
+CGDOVL                0.000 
+CGBOVL                0.000 
+CGS                   0.000 
+CGD                   0.000 
+CGB                   0.000 
 
 Conductance Terms:
-GM                  227.762n      1.142E-059
-GDS                  17.357n      4.003E-054
-GMBS                 85.068n      1.013E-060
-gbd                   1.387p          1.000p
-gbs                   1.000p          1.000p
+GM                5.700E-058
+GDS               4.003E-054
+GMBS              5.058E-059
+gbd                   1.000p
+gbs                   1.000p
 
 Current Terms:
-ID                   10.024n         -5.010p
+ID                   -5.010p
 
 Charge Terms:
-qb                   -2.202f         -2.200f
-qd               -4.640E-020      4.978E-032
-qg                    2.202f          2.200f
+qb                   -2.200f
+qd                4.978E-032
+qg                    2.200f
 
 Voltage Terms:
-VGS                   3.402           3.402 
-VDS                   5.000        -100.336n
-VBS                   5.000           5.000 
-VGB                  -1.598          -1.598 
-VGD                  -1.598           3.402 
-VDB                   0.000          -5.000 
-VTH                   1.851           3.103 
-VDSAT                34.140m         54.799m
+VGS                   3.402 
+VDS                  -5.010u
+VBS                   5.000 
+VGB                  -1.598 
+VGD                   3.402 
+VDB                  -5.000 
+VTH                   3.103 
+VDSAT                54.799m
 
 Internal Voltage Terms:
-vbs                  -5.000          -5.000 
-vds                  -5.000         100.336n
-vgs                  -3.402          -3.402 
+vbs                  -5.000 
+vds                   5.010u
+vgs                  -3.402 
 
 Power DC Terms:
-PD                   50.143n         50.100p
-PS                    0.000           0.000 
+PD                   50.100p
+PS                    0.000 
 
 DC Pin Currents:
-Ig                    0.000           0.000 
-Id                   10.024n         -5.010p
-Is                  -10.029n         -5.010p
-Ib                    5.010p         10.020p
+Ig                    0.000 
+Id                   -5.010p
+Is                   -5.010p
+Ib                   10.020p
 
 Condition:
-State                                       
+State                       
 
 Device Variables:
-m                     1.000           1.000 
-l                     0.000           0.000 
-w                     0.000           0.000 
-ad                    0.000           0.000 
-as                    0.000           0.000 
-pd                    0.000           0.000 
-ps                    0.000           0.000 
-nrd                   0.000           0.000 
-nrs                   0.000           0.000 
-nrb                   0.000           0.000 
-nrg                   0.000           0.000 
-vds                   0.000           0.000 
-vgs                   0.000           0.000 
-vbs                   0.000           0.000 
-nqsmod                0.000           0.000 
-acnqsmod              0.000           0.000 
+m                     1.000 
+l                     0.000 
+w                     0.000 
+ad                    0.000 
+as                    0.000 
+pd                    0.000 
+ps                    0.000 
+nrd                   0.000 
+nrs                   0.000 
+nrb                   0.000 
+nrg                   0.000 
+vds                   0.000 
+vgs                   0.000 
+vbs                   0.000 
+nqsmod                0.000 
+acnqsmod              0.000 
 
 
 
 Operating Point for Devices of Type Resistor
 ============================================
-Instance:                  R1          X2$.R1          X2$.R2          X2$.R3
-V                    100.336n          5.000           0.000           0.000 
+Instance:                  R1          X1$.R1          X2$.R1          X2$.R2
+V                      5.010u          4.224           5.000           0.000 
 Power DC Terms:
-PD                     1.007f         25.000n          0.000           0.000 
+PD                     0.025f          4.460m         25.000n          0.000 
 
 DC Pin Currents:
-Ir                    10.034n          5.000n          0.000           0.000 
+Ir                     5.010p          1.056m          5.000n          0.000 
 
 Device Variables:
 tc1                    0.000           0.000           0.000           0.000 
 tc2                    0.000           0.000           0.000           0.000 
 
 
-Instance:              X3$.R1    X1$.N1.rhigh     X1$.N1.rlow    X4$.N1.rhigh
-V                      4.224           1.598          -3.402           1.598 
+Instance:              X2$.R3    X3$.N1.rhigh     X3$.N1.rlow
+V                      0.000           1.598          -3.402 
 Power DC Terms:
-PD                     4.460m         13.101m         27.882m         13.101m
+PD                     0.000          13.101m         27.882m
 
 DC Pin Currents:
-Ir                     1.056m          8.197m         -8.197m          8.197m
+Ir                     0.000           8.197m         -8.197m
 
 Device Variables:
-tc1                    0.000           0.000           0.000           0.000 
-tc2                    0.000           0.000           0.000           0.000 
-
-
-Instance:         X4$.N1.rlow
-V                     -3.402 
-Power DC Terms:
-PD                    27.882m
-
-DC Pin Currents:
-Ir                    -8.197m
-
-Device Variables:
-tc1                    0.000 
-tc2                    0.000 
+tc1                    0.000           0.000           0.000 
+tc2                    0.000           0.000           0.000 
 
 
 
 Operating Point for Devices of Type Capacitor
 =============================================
-Instance:                  C1       X1$.CLOAD          X3$.C1       X4$.CLOAD
-V                    100.336n          3.402           0.000           3.402 
+Instance:                  C1          X1$.C1       X3$.CLOAD
+V                      5.010u          0.000           3.402 
 Power DC Terms:
-PS                     0.000           0.000           0.000           0.000 
+PS                     0.000           0.000           0.000 
 
 DC Pin Currents:
-Ic                     0.000           0.000           0.000           0.000 
+Ic                     0.000           0.000           0.000 
 
 Device Variables:
-ic                     0.000           0.000           0.000           0.000 
+ic                     0.000           0.000           0.000 
 
 
 
 Operating Point for Devices of Type SPICE Source
 ================================================
-Instance:               VSEL              V1              V3              V4
-V                     5.000           5.000           0.000           5.000 
+Instance:               VSEL             CLK              V1          X2$.V1
+V                     0.000           0.000           5.000           5.000 
 Power DC Terms:
-PG                   50.143n         25.050p          0.000          50.100p
+PG                    0.000           0.000          50.100p         46.264m
 
 DC Pin Currents:
-ISource             -10.029n         -5.010p          1.056m        -10.020p
+ISource               1.056m          5.010p        -10.020p         -9.253m
 
 
-Instance:             X2$.V1          X2$.V2
-V                     5.000           0.000 
+Instance:             X2$.V2
+V                     0.000 
 Power DC Terms:
-PG                   87.247m          0.000 
+PG                    0.000 
 
 DC Pin Currents:
-ISource             -17.449m         16.393m
+ISource               8.197m
 
 
