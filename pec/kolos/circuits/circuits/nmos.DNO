@@ -1,0 +1,82 @@
+********************************************************************************
+***                       Micro-Cap 12.2.0.4 (32 bit)                        ***
+***                                                                          ***
+***                                                                          ***
+***                           DC Analysis of nmos                            ***
+***                          11/26/2020 9:56:25 AM                           ***
+********************************************************************************
+Limits
+======
+Variable 1 Method        Auto
+Variable 1 Name          VDD
+Variable 1 Range         5,0,.5
+Variable 2 Method        None
+Variable 2 Name          
+Variable 2 Range         
+Temperature              Linear 27
+Number of Points         51
+Maximum Change %         5
+Run Options              Normal
+Auto Scale Ranges        On
+Accumulate Plots         Off
+Ignore Expression Errors Off
+
+Stepping Options
+================
+Stepping is Nested
+
+Step What  VGS dc.value
+From       5
+To         0
+Step Value 1
+Method     Linear
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                     VGS=5                     ***
+*****************************************************
+
+Temperature=27 VGS=5
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                     VGS=4                     ***
+*****************************************************
+
+Temperature=27 VGS=4
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                     VGS=3                     ***
+*****************************************************
+
+Temperature=27 VGS=3
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                     VGS=2                     ***
+*****************************************************
+
+Temperature=27 VGS=2
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                     VGS=1                     ***
+*****************************************************
+
+Temperature=27 VGS=1
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                     VGS=0                     ***
+*****************************************************
+
+Temperature=27 VGS=0
+

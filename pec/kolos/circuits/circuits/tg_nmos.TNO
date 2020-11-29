@@ -1,0 +1,158 @@
+********************************************************************************
+***                       Micro-Cap 12.2.0.4 (32 bit)                        ***
+***                                                                          ***
+***                                                                          ***
+***                      Transient Analysis of tg_nmos                       ***
+***                          11/26/2020 10:03:20 AM                          ***
+********************************************************************************
+Limits
+======
+Maximum Run Time           100n
+Output Start Time (tstart) 0
+Maximum Time Step          0.00000000001
+Number of Points           51
+Temperature                Linear 27
+Retrace Runs               1
+Run Options                Normal
+State Variables            Zero
+Operating Point            On
+Operating Point Only       Off
+Auto Scale Ranges          On
+Accumulate Plots           Off
+Fixed Time Step            Off
+Periodic Steady State      Off
+Ignore Expression Errors   Off
+
+
+*****************************************************
+***                Temperature=27                 ***
+*****************************************************
+
+Temperature=27
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+IN            0.000   SEL           0.000   OUT      -2.585E-028 
+
+
+Operating Point for Devices of Type BSIM3 NMOS
+==============================================
+Instance:                M1
+Using model:         NMODEL
+
+Capacitance Terms:
+CBD                  0.000 
+CBS                  0.000 
+CGSOVL               0.000 
+CGDOVL               0.000 
+CGBOVL               0.000 
+CGS                  0.000 
+CGD                  0.000 
+CGB                  0.000 
+
+Conductance Terms:
+GM                   0.000 
+GDS              1.301E-026
+GMBS                 0.000 
+gbd                  1.387p
+gbs                  1.387p
+
+Current Terms:
+ID                   0.000 
+
+Charge Terms:
+qb                  -2.345f
+qd              -2.314E-031
+qg                   2.345f
+
+Voltage Terms:
+VGS              2.585E-028
+VDS              2.585E-028
+VBS              2.585E-028
+VGB                  0.000 
+VGD                  0.000 
+VDB                  0.000 
+VTH                  1.960 
+VDSAT               27.712m
+
+Internal Voltage Terms:
+vbs              2.585E-028
+vds              2.585E-028
+vgs              2.585E-028
+
+Power DC Terms:
+PD               6.684E-068
+PS                   0.000 
+
+DC Pin Currents:
+Ig                   0.000 
+Id                   0.000 
+Is              -2.585E-040
+Ib               2.585E-040
+
+Condition:
+State                      
+
+Device Variables:
+m                    1.000 
+l                    0.000 
+w                    0.000 
+ad                   0.000 
+as                   0.000 
+pd                   0.000 
+ps                   0.000 
+nrd                  0.000 
+nrs                  0.000 
+nrb                  0.000 
+nrg                  0.000 
+vds                  0.000 
+vgs                  0.000 
+vbs                  0.000 
+nqsmod               0.000 
+acnqsmod             0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                 R1
+V                 2.585E-028
+Power DC Terms:
+PD                3.342E-060
+
+DC Pin Currents:
+Ir                1.293E-032
+
+Device Variables:
+tc1                   0.000 
+tc2                   0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                 C1
+V                 2.585E-028
+Power DC Terms:
+PS                    0.000 
+
+DC Pin Currents:
+Ic                    0.000 
+
+Device Variables:
+ic                    0.000 
+
+
+
+Operating Point for Devices of Type SPICE Source
+================================================
+Instance:               VIN           VSEL
+V                    0.000          0.000 
+Power DC Terms:
+PG                   0.000          0.000 
+
+DC Pin Currents:
+ISource         -7.345E-045         0.000 
+
+

@@ -1,0 +1,220 @@
+********************************************************************************
+***                       Micro-Cap 12.2.0.4 (32 bit)                        ***
+***                                                                          ***
+***                                                                          ***
+***                        Transient Analysis of cinv                        ***
+***                          11/26/2020 9:40:41 AM                           ***
+********************************************************************************
+Limits
+======
+Maximum Run Time           100n
+Output Start Time (tstart) 0
+Maximum Time Step          0.1n
+Number of Points           51
+Temperature                Linear 27
+Retrace Runs               1
+Run Options                Normal
+State Variables            Zero
+Operating Point            On
+Operating Point Only       Off
+Auto Scale Ranges          On
+Accumulate Plots           Off
+Fixed Time Step            Off
+Periodic Steady State      Off
+Ignore Expression Errors   Off
+
+
+*****************************************************
+***                Temperature=27                 ***
+*****************************************************
+
+Temperature=27
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+OUT           5.000   IN            0.000   3             5.000  
+
+
+Operating Point for Devices of Type BSIM3 NMOS
+==============================================
+Instance:                M1
+Using model:         NMODEL
+
+Capacitance Terms:
+CBD                  0.000 
+CBS                  0.000 
+CGSOVL               0.000 
+CGDOVL               0.000 
+CGBOVL               0.000 
+CGS                  0.000 
+CGD                  0.000 
+CGB                  0.000 
+
+Conductance Terms:
+GM               4.656E-025
+GDS              9.448E-027
+GMBS             4.644E-025
+gbd                  1.000p
+gbs                  1.387p
+
+Current Terms:
+ID                   5.010p
+
+Charge Terms:
+qb                  -2.923f
+qd              -2.303E-031
+qg                   2.923f
+
+Voltage Terms:
+VGS                  0.000 
+VDS                  5.000 
+VBS                  0.000 
+VGB                  0.000 
+VGD                 -5.000 
+VDB                  5.000 
+VTH                  1.916 
+VDSAT               29.556m
+
+Internal Voltage Terms:
+vbs                  0.000 
+vds                  5.000 
+vgs                  0.000 
+
+Power DC Terms:
+PD                  25.050p
+PS                   0.000 
+
+DC Pin Currents:
+Ig                   0.000 
+Id                   5.010p
+Is              -1.858E-026
+Ib                  -5.010p
+
+Condition:
+State                      
+
+Device Variables:
+m                    1.000 
+l                    0.000 
+w                    0.000 
+ad                   0.000 
+as                   0.000 
+pd                   0.000 
+ps                   0.000 
+nrd                  0.000 
+nrs                  0.000 
+nrb                  0.000 
+nrg                  0.000 
+vds                  0.000 
+vgs                  0.000 
+vbs                  0.000 
+nqsmod               0.000 
+acnqsmod             0.000 
+
+
+
+Operating Point for Devices of Type BSIM3 PMOS
+==============================================
+Instance:                M2
+Using model:         PMODEL
+
+Capacitance Terms:
+CBD                  0.000 
+CBS                  0.000 
+CGSOVL               0.000 
+CGDOVL               0.000 
+CGBOVL               0.000 
+CGS                  0.000 
+CGD                  0.000 
+CGB                  0.000 
+
+Conductance Terms:
+GM                   1.257p
+GDS                470.131u
+GMBS                 1.452p
+gbd                  1.387p
+gbs                  1.387p
+
+Current Terms:
+ID                  -5.010p
+
+Charge Terms:
+qb                  -5.633f
+qd                  -4.977f
+qg                  15.587f
+
+Voltage Terms:
+VGS                 -5.000 
+VDS                -10.657n
+VBS                  0.000 
+VGB                 -5.000 
+VGD                 -5.000 
+VDB                -10.657n
+VTH                  2.011 
+VDSAT                1.408 
+
+Internal Voltage Terms:
+vbs                  0.000 
+vds                 10.657n
+vgs                  5.000 
+
+Power DC Terms:
+PD               5.339E-020
+PS                   0.000 
+
+DC Pin Currents:
+Ig                   0.000 
+Id                  -5.010p
+Is                   5.010p
+Ib               1.478E-020
+
+Condition:
+State                      
+
+Device Variables:
+m                    1.000 
+l                    0.000 
+w                    0.000 
+ad                   0.000 
+as                   0.000 
+pd                   0.000 
+ps                   0.000 
+nrd                  0.000 
+nrs                  0.000 
+nrb                  0.000 
+nrg                  0.000 
+vds                  0.000 
+vgs                  0.000 
+vbs                  0.000 
+nqsmod               0.000 
+acnqsmod             0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                 C1
+V                     5.000 
+Power DC Terms:
+PS                    0.000 
+
+DC Pin Currents:
+Ic                    0.000 
+
+Device Variables:
+ic                    0.000 
+
+
+
+Operating Point for Devices of Type SPICE Source
+================================================
+Instance:               VDD        CLK_SRC
+V                    5.000          0.000 
+Power DC Terms:
+PG                  25.050p         0.000 
+
+DC Pin Currents:
+ISource             -5.010p         0.000 
+
+
